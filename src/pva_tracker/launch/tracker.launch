@@ -1,0 +1,14 @@
+<launch>
+
+
+  <node pkg="pva_tracker" type="tracker" name="tracker"  output="screen">
+
+  </node>
+
+  <!-- Launch rqt_reconfigure -->
+  <node pkg="rqt_reconfigure" type="rqt_reconfigure" output="screen" name="rqt_reconfigure" />
+  
+  <node pkg="pva_tracker"  name="straight_line"  type="straight_line"  output="screen"/>
+
+
+</launch>
